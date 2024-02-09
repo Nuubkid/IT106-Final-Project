@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Saira+Condensed:wght@200;600;900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+    color: #ffff;
+  
+}
+.contanier{
+   background: #141414;
+    height: 100vh;
+}
+video{
+    position: absolute;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        object-fit: cover;
+        z-index: -1;
+}
+.header{
+    width: 100%;
+    position: fixed;
+    padding: 20px 30px;
+    background: #303030;
+    display: flex;
+    justify-content: space-between;
+}
+.header .nav{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.header .logo img{
+    font-size: 19px
+    height: 35px;
+    width: 35px;
+    margin-left: 40px;
+}
+
+.header .nav a{
+    font-size: 25px;
+    letter-spacing: .5px;
+    font-family: 'Saira Condensed', sans-serif;
+    font-weight: 300;
+}
+.header .nav a:hover{
+    background: linear-gradient(to top right,#d4af37,#FFD700);
+    color: transparent;
+    -webkit-background-clip:text;
+    transition: .3s;
+
+}
+.hero{
+    padding: 5rem 9%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100vh;
+}
+.hero .hero-content{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.hero .hero-content h1{
+    font-size: 40px;
+    font-family: 'Saira Condensed', sans-serif;
+    text-transform: uppercase;
+
+}
+.hero .hero-content h1 span{
+    color: yellow;
+}
+.hero .hero-content p{
+    font-size: 19px;
+    font-family: 'Saira Condensed', sans-serif;
+}
+.hero .hero-content button:hover{
+    background: linear-gradient(to right,#d4af37,#303030);
+    color: transparent;
+    -webkit-background-clip:text;
+    transition: .5s;
+}
+.hero .hero-content button {
+    color: black;
+    width:  fit-content;
+    cursor: pointer;
+    padding: 10px 10px;
+    font-weight: 700;
+    font-size: 20px;
+    text-transform: uppercase;
+    background: yellow;
+}
+.hero .hero-img img {
+    height: 480px;
+    width: 630px;
+    filter: drop-shadow(1px 1px 1px #FFD700);
+}
+.loginpanel{
+    height: 300px; 
+    background-color: gray;
+    padding: 20px;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    z-index: 999;
+
+}
+.hero .login-content {
+    height: 160px;
+    width: 30%;
+    display: flex;
+    background-color: red ;
+
+}
+.login-content  h1{
+    color: blue;
+}
+
+/*BUTTONS*/
+input[type="text"],
+input[type="password"],
+input[type="email"]{
+
+    width: 200px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 2px;
+    margin-bottom: 5px;
+}
+.login-content .login-btn{
+    color: black;
+    width:  fit-content;
+    cursor: pointer;
+    padding: 10px 10px;
+    font-weight: 700;
+    font-size: 20px;
+    text-transform: uppercase;
+    background: yellow;
+}
+.footer {
+    position: fixed; 
+    bottom: 0;
+    left: 0; 
+    width: 100%; 
+    color: whitesmoke;
+    padding: 20px 30px;
+    background: #303030;
+}
+.footer p{
+    text-align: center;
+}
+
+ .form-container {
+        display: none;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: #f9f9f9;
+        padding: 20px;
+        border: 1px solid #ccc;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        z-index: 999;
+    }
+    .form-container.active {
+        display: block;
+    }
