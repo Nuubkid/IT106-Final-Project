@@ -12,15 +12,16 @@
    background: #141414;
     height: 100vh;
 }
-video{
-    position: absolute;
+/*video{
+        position: absolute;
         top: 0;
         left: 0;
         width: 100vw;
         height: 100vh;
         object-fit: cover;
         z-index: -1;
-}
+        opacity: .5;
+}*/
 h2{
     margin: 20px;
     color: black;
@@ -52,7 +53,8 @@ h2{
     letter-spacing: .5px;
     font-family: 'Saira Condensed', sans-serif;
     font-weight: 300;
-    color: #000000;
+    color: #fffff;
+    cursor: pointer;
 }
 .header .nav a:hover{
     background: linear-gradient(to top right,#d4af37,#FFD700);
@@ -109,30 +111,11 @@ h2{
     filter: drop-shadow(1px 1px 1px #FFD700);
 }
 
-.loginpanel{
-    height: 300px; 
-    background-color: gray;
-    padding: 20px;
-    border: 1px solid #ccc;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    z-index: 999;
 
-}
-.hero .login-content {
-    height: 160px;
-    width: 30%;
-    display: flex;
-    background-color: red ;
-
-}
-.login-content  h1{
-    color: blue;
-}
-
-/*BUTTONS*/
-#loginForm .form-container input[type="text"],
-#loginForm .form-container input[type="password"],
-#loginForm .form-container input[type="email"] {
+/*TEXTBOXES*/
+input[type="text"],
+input[type="password"],
+input[type="email"] {
     width: 200px;
     padding: 10px;
     border: 1px solid #ccc;
@@ -171,30 +154,25 @@ h2{
     top: 50%;
     right: 5%; /* Adjust the right position as needed */
     transform: translate(0, -50%);
-    background-color: #f9f9f9;
+    background-color: #303030;
     padding: 20px;
     border: 1px solid #ccc;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     z-index: 999;
     height: 80%;
     max-width: 300px; /* Limit the width to avoid stretching on larger screens */
-}
+    font-family: 'Saira Condensed', sans-serif;
+    text-transform: uppercase;
 
-/* Adjust the font size and padding for text inputs */
-.form-container input[type="text"],
-.form-container input[type="password"],
-.form-container input[type="email"] {
-    width: 100%; /* Make inputs fill the container width */
-    padding: 10px;
-    margin-bottom: 15px; /* Increase spacing between inputs */
-    font-size: 16px; /* Increase font size for better visibility */
-    color: #ffffff;
+}
+.form-container h2{
+     color: yellow;
 }
 .form-container button:hover {
-    background-color: black; /* Change background color to black on hover */
-    background-color: white; /* Change text color to white on hover */
-    color: white;
-    color: black;
+     background: linear-gradient(to right,#d4af37,#303030);
+     color: transparent;
+    -webkit-background-clip:text;
+     transition: .5s;
 }
 
 
@@ -203,10 +181,13 @@ h2{
     width: 100%; /* Make button fill the container width */
     padding: 12px; /* Increase padding for better clickability */
     font-size: 16px; /* Increase font size for better visibility */
-    background-color: #000;
+    background: yellow;
+   color: black;
+    font-weight: 700;
+    text-transform: uppercase;
 }
 
 
-    .form-container.active {
-        display: block;
-    }
+.form-container.active {
+    display: block;
+}

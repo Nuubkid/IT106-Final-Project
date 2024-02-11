@@ -8,9 +8,9 @@
  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
 </head>
 <body>
-	
+		
 		<div class="contanier">	
-			<video src="img/vid.mp4"></video>
+			<!-- <video src="img/vid.mp4" autoplay loop=1></video>		 -->
 			<header class="header">
 				<a href="#" class="logo"><img src="img/logo.png"></a>
 				<nav class="nav">
@@ -23,21 +23,21 @@
 			</header>
 			<!--login-->
 			 <div id="loginForm" class="form-container">
-        <h2>Login</h2>
-        <form>
-            <input type="text" placeholder="Username" required><br><br>
-            <input type="password" placeholder="Password" required><br><br>
+        <h1>Login</h1>
+        <form action="login.php" method="POST">
+            <input type="text" name="username" placeholder="Username" required><br><br>
+            <input type="password"  name="password" placeholder="Password" required><br><br>
             <button type="submit">Login</button>
         </form>
     </div>
 
     <div id="registerForm" class="form-container">
-        <h2>Register</h2>
-        <form>
-            <input type="text" placeholder="Username" required><br><br>
-            <input type="password" placeholder="Password" required><br><br>
-            <input type="password" placeholder="Confirm Password" required><br><br>
-            <input type="email" placeholder="Email" required><br><br>
+        <h1>Register</h1>
+        <form action="register.php" method="POST">
+            <input type="text" name="username" placeholder="Username" required><br><br>
+            <input type="password" name="password" placeholder="Password" required><br><br>
+            <input type="password" name="confirmpassword"placeholder="Confirm Password" required><br><br>
+            <input type="email" name="email" placeholder="Email" required><br><br>
             <button type="submit">Register</button>
         </form>
     </div>	
