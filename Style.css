@@ -48,14 +48,15 @@ h2{
 }
 
 
-.header .nav a{
+.header .nav a {
     font-size: 25px;
     letter-spacing: .5px;
     font-family: 'Saira Condensed', sans-serif;
     font-weight: 300;
-    color: #fffff;
+    color: #ffffff; /* Corrected color value */
     cursor: pointer;
 }
+
 .header .nav a:hover{
     background: linear-gradient(to top right,#d4af37,#FFD700);
     color: transparent;
