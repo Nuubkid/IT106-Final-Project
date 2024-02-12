@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Pointblank Bakbakan</title>
+	<link rel="stylesheet" type="text/css" href="Style.css">
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+</head>
+<body>
+		
+		<div class="contanier">	
+			<!-- <video src="img/vid.mp4" autoplay loop=1></video>		 -->
+			<header class="header">
+				<a href="#" class="logo"><img src="img/logo.png"></a>
+				<nav class="nav">
+					<a onclick="RemoveForms()">Home</a>	
+					<a href="#">Download</a>	
+					<a onclick="showLoginForm()">Login</a>
+					<a onclick="showRegisterForm()">Register</a>		
+					<a href="#">About us</a>	
+				</nav>
+			</header>
+			<!--login-->
+			 <div id="loginForm" class="form-container">
+        <h1>Login</h1>
+        <form action="login.php" method="POST">
+            <input type="text" name="username" placeholder="Username" required><br><br>
+            <input type="password"  name="password" placeholder="Password" required><br><br>
+            <button type="submit">Login</button>
+        </form>
+    </div>
+
+    <div id="registerForm" class="form-container">
+        <h1>Register</h1>
+        <form action="register.php" method="POST">
+            <input type="text" name="username" placeholder="Username" required><br><br>
+            <input type="password" name="password" placeholder="Password" required><br><br>
+            <input type="password" name="confirmpassword"placeholder="Confirm Password" required><br><br>
+            <input type="email" name="email" placeholder="Email" required><br><br>
+            <button type="submit">Register</button>
+        </form>
+    </div>	
+			<section class="hero">
+				<div class="hero-content">
+					<h1>Pointblank <span>Bakbakan</span> <br>
+						private Server
+					</h1>
+					<p>Elevate your Point Blank experience with intense gameplay, stunning graphics, and a unique twist. Dive into adrenaline pumping battles, showcasing your shooting prowess in diverse game modes. Embrace teamwork, skill-based gameplay, and a carefully crafted platform for both casual and hardcore gamers. Join the Golden adventure for a thrilling FPS encounter like never before!</p>
+					<button>DOWNLOAD GAME</button>
+				</div>
+				<div class="hero-img">
+					<img src="img/bg-preview.png" alt="ViperRed picture">
+				</div>									   
+			</section>
+			<div class="footer">
+				<p>Copyright Project Golden @2024</p>
+			</div>
+		</div>
+		<!--LOGIN/REGISTER SHOW-->
+		<script>
+				function RemoveForms(){
+					  document.getElementById('registerForm').classList.remove('active');
+					   document.getElementById('loginForm').classList.remove('active');
+				}
+		        function showLoginForm() {
+		            document.getElementById('loginForm').classList.add('active');
+		            document.getElementById('registerForm').classList.remove('active');
+		        }
+
+		        function showRegisterForm() {
+		            document.getElementById('registerForm').classList.add('active');
+		            document.getElementById('loginForm').classList.remove('active');
+		        }
+		    </script>		
+</body>
+</html>
