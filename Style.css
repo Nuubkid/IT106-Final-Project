@@ -192,3 +192,19 @@ input[type="email"] {
 .form-container.active {
     display: block;
 }
+
+
+/*         ADMIN CSS STYLE HERE                     */
+nav ul {
+    display: flex;
+    justify-content: flex-end; /* Align items to the left */
+    padding: 0; /* Remove any default padding */
+    list-style: none;
+}
+
+nav ul li {
+    margin-top: 2em;
+    margin-right: 10px; /* Add spacing between items */
+    color: #000;
+}
+
